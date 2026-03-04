@@ -1,0 +1,67 @@
+{
+  "name": "3d-tiles-colliders-rapier",
+  "version": "0.1.0",
+  "description": "LOD-aware physics sync — dynamically creates and destroys Rapier trimesh colliders from streaming 3D Tiles",
+  "type": "module",
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./react": {
+      "types": "./dist/react.d.ts",
+      "import": "./dist/react.js",
+      "require": "./dist/react.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "3d-tiles",
+    "rapier",
+    "physics",
+    "colliders",
+    "trimesh",
+    "threejs",
+    "3d-tiles-renderer",
+    "lod",
+    "terrain"
+  ],
+  "license": "MIT",
+  "peerDependencies": {
+    "@dimforge/rapier3d-compat": ">=0.12.0",
+    "three": ">=0.150.0"
+  },
+  "peerDependenciesMeta": {
+    "@react-three/fiber": {
+      "optional": true
+    },
+    "@react-three/rapier": {
+      "optional": true
+    },
+    "react": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@dimforge/rapier3d-compat": "^0.14.0",
+    "@react-three/fiber": "^9.0.0",
+    "@react-three/rapier": "^2.2.0",
+    "@types/react": "^19.0.0",
+    "@types/three": "^0.170.0",
+    "react": "^19.0.0",
+    "three": "^0.170.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.6.0"
+  }
+}
