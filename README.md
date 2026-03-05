@@ -1,5 +1,8 @@
 # 3d-tiles-colliders-rapier
 
+[![npm version](https://img.shields.io/npm/v/3d-tiles-colliders-rapier)](https://www.npmjs.com/package/3d-tiles-colliders-rapier)
+[![license](https://img.shields.io/npm/l/3d-tiles-colliders-rapier)](https://github.com/prmarshall/3d-tiles-colliders-rapier/blob/main/LICENSE)
+
 LOD-aware physics sync — dynamically creates and destroys [Rapier](https://rapier.rs/) trimesh colliders from streaming [3D Tiles](https://github.com/NASA-AMMOS/3DTilesRendererJS).
 
 As tiles load and unload during LOD transitions, this library keeps the physics world in sync: new tile meshes get trimesh colliders, unloaded tiles have their colliders removed. No manual tracking required.
