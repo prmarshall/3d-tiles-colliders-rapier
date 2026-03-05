@@ -37,6 +37,10 @@
     "lod",
     "terrain"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/prmarshall/3d-tiles-colliders-rapier"
+  },
   "license": "MIT",
   "peerDependencies": {
     "@dimforge/rapier3d-compat": ">=0.12.0",
